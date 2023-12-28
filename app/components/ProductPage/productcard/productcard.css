@@ -1,0 +1,39 @@
+.productCard {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    background: #fafafa;
+    box-shadow:  6px 6px 12px #dcdcdc,
+                 -6px -6px 12px #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.thumbnail {
+    width: 100%;
+    height: auto;
+}
+
+.productCard:hover {
+    transform: scale(1.03);
+}
+
+.thumbnailContainer {
+    height: 210px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.textContainer {
+    padding: 8px 16px;
+}
+
+.productName {
+    font-size: 20px;
+    font-weight: 700;
+}

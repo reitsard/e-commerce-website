@@ -1,0 +1,64 @@
+/* container */
+.topFilter {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 722px;
+    height: 50px;
+    justify-content: space-evenly;
+    color: black;
+    font-size: 20px;
+}
+
+/* filter options style */
+.topFilterOptions {
+    display: block;
+    color: rgba(0, 0, 0, 0.71);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* solid bar animation */
+.bottomBar {
+    position: absolute;
+    display: block;
+}
+
+/* filter active state */
+.topFilterActive {
+    color: #352F24;
+}
+
+/* filter animation on click */
+.topFilter #all.topFilterActive~.bottomBar {
+    background: #352F24;
+    width: 72px;
+    height: 4px;
+    left: 112px;
+    bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.topFilter #latest.topFilterActive~.bottomBar {
+    left: 310px;
+    bottom: 4px;
+    display: block;
+    background: #352F24;
+    width: 37px;
+    height: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.topFilter #limited.topFilterActive~.bottomBar {
+    background: #352F24;
+    width: 106px;
+    height: 4px;
+    left: 485px;
+    bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}

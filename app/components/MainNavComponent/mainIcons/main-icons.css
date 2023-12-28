@@ -1,0 +1,24 @@
+.mainIcons {
+    display: flex;
+    width: 183px;
+    height: 80px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.icons {
+    display: inline-block;
+    width: auto;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.icons:hover {
+    transform: scale(1.12);
+}

@@ -1,0 +1,119 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.categories {
+  position: relative;
+  width: 1366px;
+  height: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+  gap: 20px;
+  padding: 15px 80px 26px;
+}
+
+.categoryItem {
+  position: relative;
+  cursor: pointer;
+  color: var(--heading-3-color, #9e8d6e);
+  text-align: center;
+  align-self: start;
+  font: 700 16px 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.activeItem {
+  color: #352F24;
+}
+
+.categoryItem.activeItem::after {
+  background: #352F24;
+}
+
+span {
+  display: none;
+  user-select: none;
+}
+
+nav div:nth-child(1).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 80px;
+  bottom: 10px;
+  width: 32px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(2).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 247px;
+  bottom: 10px;
+  width: 56px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(3).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 439px;
+  bottom: 10px;
+  width: 34px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(4).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 608px;
+  bottom: 10px;
+  width: 68px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(5).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 809px;
+  bottom: 10px;
+  width: 95px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(6).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 1037px;
+  bottom: 10px;
+  width: 80px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+nav div:nth-child(7).activeItem~span {
+  display: block;
+  position: absolute;
+  left: 1250px;
+  bottom: 10px;
+  width: 35px;
+  height: 4px;
+  background: #352F24;
+  transition: all .5s ease 0s;
+}
+
+

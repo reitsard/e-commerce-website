@@ -1,0 +1,164 @@
+/* side bar container */
+.sidebar {
+    position: fixed;
+    top: 150px;
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
+
+/* filter text */
+.filterTxt {
+    color: gray;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    padding: 24px;
+}
+
+
+/* item group container */
+.shoeCategories {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+/*individual option style*/
+.prodCat {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    width: 250px;
+    height: 50px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    user-select: none;
+}
+
+/*animation fill bar*/
+.bar {
+    position: absolute;
+    display: none;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    background: #f0f0f0;
+}
+
+
+/* onHover animation*/
+.shoeCategories .prodCat:nth-child(1):hover~.bar{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(1).activeFilter~.bar{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(2):hover~.bar{
+    position: absolute;
+    top: 125px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(2).activeFilter~.bar{
+    position: absolute;
+    top: 125px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(3):hover~.bar{
+    position: absolute;
+    top: 175px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(3).activeFilter~.bar{
+    position: absolute;
+    top: 175px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(4):hover~.bar{
+    position: absolute;
+    top: 225px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(4).activeFilter~.bar{
+    position: absolute;
+    top: 225px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(5):hover~.bar{
+    position: absolute;
+    top: 275px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(5).activeFilter~.bar{
+    position: absolute;
+    top: 275px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(6):hover~.bar{
+    position: absolute;
+    top: 325px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(6).activeFilter~.bar{
+    position: absolute;
+    top: 325px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+.shoeCategories .prodCat:nth-child(7):hover~.bar{
+    position: absolute;
+    top: 375px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(7).activeFilter~.bar{
+    position: absolute;
+    top: 375px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(8):hover~.bar{
+    position: absolute;
+    top: 425px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.shoeCategories .prodCat:nth-child(8).activeFilter~.bar{
+    position: absolute;
+    top: 425px;
+    display: block;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 56px;
+  color: black;
+  height: 80px;
+  width: 1366px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+}
+
+.imgContainer {
+  display: block;
+  height: 100%;
+  padding: 4px;
+}
+
+.profileIcons {
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+}

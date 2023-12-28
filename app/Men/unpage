@@ -1,0 +1,48 @@
+"use client"
+
+import React, { useState, useEffect, useMemo} from 'react'
+import { memo } from 'react'
+import '../globals.css'
+import SidebarShoes from '../components/ProductPage/sidebar-shoes/page.jsx'
+import ProductCard from '../components/ProductPage/productcard/page.jsx'
+import maleShoes from '../scripts/menshoes.js'
+import MaleAll from '../components/Products/male/male-all'
+import MaleLatest from '../components/Products/male/male-latest'
+import TopFilter, {topfilterstate} from '../components/ProductPage/topfilter/page.jsx'
+import { isClicked } from '../NavBar/CategoriesNav/page'
+
+
+const MenShoes = () => {
+  const [updateCards, setUpdateCards] = useState();
+  const tFilter = topfilterstate;
+  let allF = tFilter[0].all
+  let latestF = tFilter[1].latest
+  let limitedF = tFilter[2].limited
+  let navClicked = isClicked
+
+
+  useEffect(() => {
+    setUpdateCards(() => {
+      allF ? <MaleAll /> : <MaleLatest />
+    })
+  }, [navClicked])
+  
+
+  return (
+    <>
+    <div className='containerDiv'>
+       <div className='aside'>
+        <SidebarShoes />
+       </div>
+       <div className='productLayout'>
+          <TopFilter />
+          <div className='gridLayout'>
+            {updateCards}
+          </div>
+        </div>
+    </div>
+    </>
+  )
+}
+
+export default MenShoes;
